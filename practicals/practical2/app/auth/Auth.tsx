@@ -7,7 +7,8 @@ import {
 import { makeRedirectUri } from "expo-auth-session";
 import { Button, Input } from "@rneui/themed";
 import { supabase } from "@/app/lib/supabase";
-import { useRouter } from 'expo-router';
+import { Redirect, useRouter } from 'expo-router';
+
 
 export default function Auth() {
 
@@ -15,6 +16,7 @@ export default function Auth() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  
 
   // Sign in with email/password
   const signInWithEmail = async () => {
@@ -23,11 +25,9 @@ export default function Auth() {
       email,
       password,
     });
-
     if (error) {
       Alert.alert(error.message);
     }
-
     setLoading(false);
   };
 
