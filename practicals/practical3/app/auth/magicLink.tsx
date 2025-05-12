@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Button, View, StyleSheet } from "react-native";
 import { Input } from "@rneui/themed";
 import { supabase } from "@/app/lib/supabase";
-import { makeRedirectUri } from "expo-auth-session";
+// import { makeRedirectUri } from "expo-auth-session";
 
 export default function MagicLink() {
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
-    const redirectTo = makeRedirectUri();
+    // const redirectTo = makeRedirectUri();
 
     const sendMagicLink = async () => {
         if (!email) {

@@ -7,7 +7,8 @@ import {
 // import { makeRedirectUri } from "expo-auth-session";
 import { Button, Input } from "@rneui/themed";
 import { supabase } from "@/app/lib/supabase";
-import { Redirect, useRouter } from 'expo-router';
+import { Redirect, useRouter, useFocusEffect } from 'expo-router';
+// import { useRouter,  } from 'expo-router';
 
 
 export default function Auth() {
@@ -27,6 +28,8 @@ export default function Auth() {
     });
     if (error) {
       Alert.alert(error.message);
+    }else{
+      router.replace('/(tabs)/todo')
     }
     setLoading(false);
   };
@@ -41,7 +44,6 @@ export default function Auth() {
       email,
       password,
     });
-
     if (error) Alert.alert(error.message);
     if (!session)
       Alert.alert("Please check your inbox for email verification!");
