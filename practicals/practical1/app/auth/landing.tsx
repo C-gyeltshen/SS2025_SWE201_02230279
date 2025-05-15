@@ -6,24 +6,19 @@ import { Link } from "expo-router";
 
 const slides = [
     {
-        image: "https://xmfbfpodrpkidxutnxrp.supabase.co/storage/v1/object/public/SDA_Practical//login1.jpeg",
+        image: "https://lxbwebkumugyhysshekq.supabase.co/storage/v1/object/sign/my-image/Screenshot_2025-05-15_at_10.57.57_AM-removebg-preview%20(1).png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5Xzg3MjU2NmJiLWE0ODgtNGQ0My04N2QzLTg4ZWI0N2RjZjU1YyJ9.eyJ1cmwiOiJteS1pbWFnZS9TY3JlZW5zaG90XzIwMjUtMDUtMTVfYXRfMTAuNTcuNTdfQU0tcmVtb3ZlYmctcHJldmlldyAoMSkucG5nIiwiaWF0IjoxNzQ3MjkxNTk3LCJleHAiOjE3Nzg4Mjc1OTd9.9uCLyidFmSb3bSXpFvoTrHlV6AnnYGA2uD_kSwegO2w",
         header: "Welcome to Gojek",
         text: "Your go-to app for a hassle-free life. We're here to help with all your needs anytime, anywhere.",
     },
     {
-        image: "https://xmfbfpodrpkidxutnxrp.supabase.co/storage/v1/object/public/SDA_Practical//login2.jpeg",
+        image: "https://lxbwebkumugyhysshekq.supabase.co/storage/v1/object/sign/my-image/Screenshot_2025-05-15_at_12.47.47_PM-removebg-preview.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5Xzg3MjU2NmJiLWE0ODgtNGQ0My04N2QzLTg4ZWI0N2RjZjU1YyJ9.eyJ1cmwiOiJteS1pbWFnZS9TY3JlZW5zaG90XzIwMjUtMDUtMTVfYXRfMTIuNDcuNDdfUE0tcmVtb3ZlYmctcHJldmlldy5wbmciLCJpYXQiOjE3NDcyOTE3MDgsImV4cCI6MTc3ODgyNzcwOH0.QwZ0-doTqN_s9cdqOvHr1FJJlYMKfeS0PDsxUyUjkAc",
         header: "Transport & Logistics",
         text: "Daily commute and goods delivery made easy.",
     },
     {
-        image: "https://xmfbfpodrpkidxutnxrp.supabase.co/storage/v1/object/public/SDA_Practical//login3.jpeg",
+        image: "https://lxbwebkumugyhysshekq.supabase.co/storage/v1/object/sign/my-image/Screenshot_2025-05-15_at_12.47.47_PM-removebg-preview.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5Xzg3MjU2NmJiLWE0ODgtNGQ0My04N2QzLTg4ZWI0N2RjZjU1YyJ9.eyJ1cmwiOiJteS1pbWFnZS9TY3JlZW5zaG90XzIwMjUtMDUtMTVfYXRfMTIuNDcuNDdfUE0tcmVtb3ZlYmctcHJldmlldy5wbmciLCJpYXQiOjE3NDcyOTE4MDMsImV4cCI6MTc3ODgyNzgwM30.6r6M6aKcQBsA_cszqjhGPyRhgyCC-1zczgktznFO-Ww",
         header: "Get food & groceries",
         text: "Either needs or cravings, we got you covered.",
-    },
-    {
-        image: "https://xmfbfpodrpkidxutnxrp.supabase.co/storage/v1/object/public/SDA_Practical//Gojek%20Image.jpeg",
-        header: "Payment",
-        text: "Pay utility bills, phone credit, and transfer money from your phone.",
     }
 ];
 

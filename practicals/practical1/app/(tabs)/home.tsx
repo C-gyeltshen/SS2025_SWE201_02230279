@@ -13,13 +13,13 @@ export default function Home() {
             SplashScreen.hideAsync(); // Hide Splash Screen
             // navigation.replace("LandingPage"); // Navigate after 10 seconds
             router.replace('/auth/landing')
-        }, 1000);
+        }, 5000);
     }, []);
 
     return (
         <View style={styles.container}>
             <Image 
-                source={{ uri: "https://console.kr-asia.com/wp-content/uploads/2019/07/Vertical_Logo-287x300.png" }} 
+                source={require('../../assets/images/SS-logo.png')} 
                 style={styles.logo} 
             />
             {/* <Button 

@@ -26,13 +26,14 @@ export default function SplashScreenComponent() {
     prepare();
   }, []);
 
-  const onLayoutRootView = useCallback(() => {
-    if (appIsReady && pathname === '/home') { 
-      SplashScreen.hideAsync();
-      setTimeout(() => {
-      }, 4000); // Show splash screen for 4 seconds
-    }
-  }, [appIsReady, router, pathname]);
+const onLayoutRootView = useCallback(() => {
+  if (appIsReady) {
+    SplashScreen.hideAsync();
+    setTimeout(() => {
+      router.replace('/auth/Auth');
+    }, 4000); // Show splash screen for 4 seconds
+  }
+}, [appIsReady, router]);
 
   if (!appIsReady) {
     return null;

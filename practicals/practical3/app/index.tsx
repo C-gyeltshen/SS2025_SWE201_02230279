@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { View, Text } from "react-native";
 import { Session } from "@supabase/supabase-js";
 import { supabase } from "./lib/supabase";
-import Auth from "@/app/auth/Auth";
+import SplashScreenComponent from "./(tabs)/SplashScreen";
+import TodoApp from "./(tabs)/todo";
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null);
@@ -21,12 +22,15 @@ export default function App() {
   return (
     <View>
       {session && session.user ? (
-        <View>
-          <Text>Hello, this is my Home component!</Text>
-          <Text>{JSON.stringify(session.user)}</Text>
-        </View>
+        // <View>
+        //   <Text>Hello, this is my Home component!</Text>
+        //   <Text>{JSON.stringify(session.user)}</Text>
+        //   <Text>WE ARE HERE</Text>
+        // </View>
+        <TodoApp />
       ) : (
-        <Auth />
+        // <Auth />
+        <SplashScreenComponent />
       )}
     </View>
   );

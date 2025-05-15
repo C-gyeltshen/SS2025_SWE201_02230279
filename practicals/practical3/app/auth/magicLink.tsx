@@ -2,9 +2,13 @@ import { useState } from "react";
 import { Button, View, StyleSheet } from "react-native";
 import { Input } from "@rneui/themed";
 import { supabase } from "@/app/lib/supabase";
+import { Redirect, useRouter } from 'expo-router';
 // import { makeRedirectUri } from "expo-auth-session";
 
 export default function MagicLink() {
+
+    const router = useRouter();
+    
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
     // const redirectTo = makeRedirectUri();
@@ -17,7 +21,6 @@ export default function MagicLink() {
         const { error } = await supabase.auth.signInWithOtp({
             email: email,
             options: {
-                
             },
         });
         if (error) {
@@ -25,6 +28,8 @@ export default function MagicLink() {
             return;
         }
         alert("Magic link sent! Please check your email.");
+        // router.replace('/(tabs)/todo');
+
         };
 
     return (

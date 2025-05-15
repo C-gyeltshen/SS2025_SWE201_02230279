@@ -15,15 +15,8 @@
     ActivityIndicator,
   } from "react-native";
   import { StatusBar } from "expo-status-bar";
-  import { 
-    fetchTodo, 
-    insertTodo, 
-    updateTodoText,
-    toggleTodoComplete,
-    deleteTodo,
-    deleteAllTodos 
-  } from "@/shared/services/todoService";
-import Navbar from "./Navbar";
+import { deleteAllTodos, deleteTodo, fetchTodo, insertTodo, toggleTodoComplete, updateTodoText } from "@/services/todoService";
+
 
   interface TodoItem {
     id: string;
@@ -181,7 +174,6 @@ import Navbar from "./Navbar";
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         style={styles.main}
       >
-        <Navbar />
         <StatusBar style="auto" />
         <ImageBackground
           source={require("../../assets/images/bg.jpg")}
