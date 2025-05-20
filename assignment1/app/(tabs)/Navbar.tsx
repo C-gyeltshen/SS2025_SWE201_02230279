@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
+import { UserSignOut } from '@/shared/services/userAccount';
 
 type Props = {
   username: string;
@@ -14,7 +15,7 @@ const Navbar: React.FC<Props> = ({ username, onLogout }) => {
         <MaterialIcons name="account-circle" size={28} color="#fff" />
         <Text style={styles.username}>{username}</Text>
       </View>
-      <TouchableOpacity onPress={onLogout}>
+      <TouchableOpacity onPress={UserSignOut}>
         <Text style={styles.logout}>Logout</Text>
       </TouchableOpacity>
     </View>

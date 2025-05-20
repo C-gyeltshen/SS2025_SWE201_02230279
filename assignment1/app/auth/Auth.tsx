@@ -70,13 +70,11 @@ export default function Auth() {
           label="Password"
           leftIcon={{ type: "font-awesome", name: "lock" }}
           onChangeText={(text) => setPassword(text)}
-          value={password}
           secureTextEntry={true}
           placeholder="Password"
           autoCapitalize="none"
         />
       </View>
-
       {/* Magic Link */}
       <Button
           title="Use Magic Link"
